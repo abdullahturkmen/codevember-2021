@@ -1,0 +1,129 @@
+body {
+  background: rgb(148, 187, 233);
+  background: radial-gradient(
+    circle,
+    rgba(148, 187, 233, 1) 0%,
+    rgba(238, 174, 202, 1) 100%
+  );
+}
+.sides {
+  position: absolute;
+  width: 200px;
+  height: 350px;
+  margin: auto;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  &:after {
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 500%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(167, 167, 167);
+    background: linear-gradient(
+      90deg,
+      rgba(167, 167, 167, 1) 0%,
+      rgba(237, 237, 237, 1) 30%,
+      rgba(52, 52, 52, 1) 100%
+    );
+    z-index: 2;
+  }
+
+  .side {
+    position: absolute;
+    width: 200px;
+    height: 350px;
+    opacity: 0.8;
+    animation: 5s linear 0s infinite;
+    background-color: #ff3cac;
+    background-image: linear-gradient(
+      225deg,
+      #ff3cac 0%,
+      #784ba0 50%,
+      #2b86c5 100%
+    );
+    border-radius: 10px;
+
+    &-one {
+      animation-name: sideone;
+    }
+    &-two {
+      animation-name: sidetwo;
+    }
+    &-three {
+      animation-name: sidethree;
+    }
+  }
+}
+
+@keyframes sideone {
+  0% {
+    transform: perspective(600px) rotateY(45deg) translateZ(200px);
+    z-index: 3;
+  }
+  25% {
+    z-index: 1;
+  }
+  50% {
+    transform: perspective(600px) rotateY(225deg) translateZ(75px);
+    z-index: 1;
+  }
+  75% {
+    z-index: 3;
+  }
+  100% {
+    transform: perspective(600px) rotateY(405deg) translateZ(200px);
+    z-index: 3;
+  }
+}
+
+@keyframes sidetwo {
+  0% {
+    transform: perspective(600px) rotateY(165deg) translateZ(200px);
+    z-index: 1;
+  }
+  35% {
+    z-index: 1;
+  }
+  36% {
+    z-index: 3;
+  }
+  50% {
+    transform: perspective(600px) rotateY(345deg) translateZ(75px);
+    z-index: 3;
+  }
+  85% {
+    z-index: 3;
+  }
+  100% {
+    transform: perspective(600px) rotateY(525deg) translateZ(200px);
+    z-index: 1;
+  }
+}
+
+@keyframes sidethree {
+  0% {
+    transform: perspective(600px) rotateY(285deg) translateZ(200px);
+    z-index: 3;
+  }
+  35% {
+    z-index: 3;
+  }
+  50% {
+    transform: perspective(600px) rotateY(465deg) translateZ(75px);
+    z-index: 1;
+  }
+
+  75% {
+    z-index: 1;
+  }
+  100% {
+    transform: perspective(600px) rotateY(645deg) translateZ(200px);
+    z-index: 3;
+  }
+}
