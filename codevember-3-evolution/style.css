@@ -1,0 +1,184 @@
+body {
+  background-color: #091a1d;
+}
+
+.butterfly {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  aspect-ratio: 1;
+  width: 50%;
+  min-width: 200px;
+  max-width: 300px;
+}
+
+.butterfly-body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 30px;
+  height: 80%;
+  background-color: #58b591;
+  border-radius: 100%;
+  z-index: 0;
+  -webkit-box-shadow: 0 0 6px 5px #346852;
+          box-shadow: 0 0 6px 5px #346852;
+}
+
+.butterfly-body::before, .butterfly-body::after {
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background-color: #25bd7c;
+  content: "";
+  position: absolute;
+  top: -10px;
+  -webkit-box-shadow: 0 0 6px 5px #346852;
+          box-shadow: 0 0 6px 5px #346852;
+}
+
+.butterfly-body::before {
+  left: -10px;
+}
+
+.butterfly-body::after {
+  right: -10px;
+}
+
+.butterfly-wings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 1;
+  position: inherit;
+  opacity: 0.95;
+}
+
+.butterfly-wings .wing {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.butterfly-wings .wing-left {
+  -webkit-animation: left-wing 0.3s ease infinite alternate;
+          animation: left-wing 0.3s ease infinite alternate;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+}
+
+.butterfly-wings .wing-left .wing-top-part {
+  border-top-right-radius: 100%;
+  border-bottom-left-radius: 80%;
+  -webkit-box-shadow: inset 5px 5px 10px white, -15px 0px 6px 5px #25bd7c;
+          box-shadow: inset 5px 5px 10px white, -15px 0px 6px 5px #25bd7c;
+  background: #c8ffe9;
+  background: linear-gradient(135deg, #c8ffe9 0%, #7eefc2 100%);
+}
+
+.butterfly-wings .wing-left .wing-bottom-part {
+  border-top-left-radius: 60%;
+  border-bottom-right-radius: 100%;
+  margin-left: auto;
+  -webkit-box-shadow: inset 5px -5px 10px white, -15px 5px 6px 5px #25bd7c;
+          box-shadow: inset 5px -5px 10px white, -15px 5px 6px 5px #25bd7c;
+  background: #c8ffe9;
+  background: linear-gradient(45deg, #c8ffe9 0%, #7eefc2 100%);
+}
+
+.butterfly-wings .wing-right {
+  -webkit-animation: right-wing 0.3s ease infinite alternate;
+          animation: right-wing 0.3s ease infinite alternate;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.butterfly-wings .wing-right .wing-top-part {
+  border-top-left-radius: 100%;
+  border-bottom-right-radius: 80%;
+  -webkit-box-shadow: inset -5px 5px 10px white, 15px 0px 6px 5px #25bd7c;
+          box-shadow: inset -5px 5px 10px white, 15px 0px 6px 5px #25bd7c;
+  background: #c8ffe9;
+  background: linear-gradient(225deg, #c8ffe9 0%, #7eefc2 100%);
+}
+
+.butterfly-wings .wing-right .wing-bottom-part {
+  border-top-right-radius: 60%;
+  border-bottom-left-radius: 100%;
+  -webkit-box-shadow: inset -5px -5px 10px white, 15px 5px 6px 5px #25bd7c;
+          box-shadow: inset -5px -5px 10px white, 15px 5px 6px 5px #25bd7c;
+  background: #c8ffe9;
+  background: linear-gradient(-45deg, #c8ffe9 0%, #7eefc2 100%);
+}
+
+.butterfly-wings .wing-top-part {
+  height: 70%;
+}
+
+.butterfly-wings .wing-bottom-part {
+  height: 30%;
+  width: 50%;
+}
+
+@-webkit-keyframes left-wing {
+  from {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  to {
+    -webkit-transform: rotateY(50deg);
+            transform: rotateY(50deg);
+  }
+}
+
+@keyframes left-wing {
+  from {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  to {
+    -webkit-transform: rotateY(50deg);
+            transform: rotateY(50deg);
+  }
+}
+
+@-webkit-keyframes right-wing {
+  from {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  to {
+    -webkit-transform: rotateY(50deg);
+            transform: rotateY(50deg);
+  }
+}
+
+@keyframes right-wing {
+  from {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  to {
+    -webkit-transform: rotateY(50deg);
+            transform: rotateY(50deg);
+  }
+}
+/*# sourceMappingURL=style.css.map */
