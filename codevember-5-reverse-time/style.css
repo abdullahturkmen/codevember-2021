@@ -1,0 +1,122 @@
+body {
+  background-color: burlywood;
+}
+
+.clock {
+  position: absolute;
+  width: 65%;
+  max-height: 70%;
+  aspect-ratio: 1;
+  border: 25px solid transparent;
+  -webkit-box-shadow: -4px -4px 10px #43434380, inset 4px 4px 10px #00000080, inset -4px -4px 10px #43434380, 4px 4px 10px #0000004d;
+          box-shadow: -4px -4px 10px #43434380, inset 4px 4px 10px #00000080, inset -4px -4px 10px #43434380, 4px 4px 10px #0000004d;
+  border-radius: 100%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.clock .hands {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+}
+
+.clock .hands::after {
+  content: "";
+  width: 10%;
+  height: 10%;
+  position: absolute;
+  border-radius: 100%;
+  background-color: beige;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-box-shadow: inset 10px 10px 15px -10px #00000085, 5px 5px 10px -5px #00000085;
+          box-shadow: inset 10px 10px 15px -10px #00000085, 5px 5px 10px -5px #00000085;
+}
+
+.clock .hands .hand {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  -webkit-transform-origin: 100%;
+          transform-origin: 100%;
+  border-radius: 100px;
+  height: 10px;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.clock .hands .hand-hour {
+  background-color: #000000;
+  width: 20%;
+}
+
+.clock .hands .hand-minute {
+  background-color: #424242;
+  width: 30%;
+}
+
+.clock .hands .hand-second {
+  background-color: #5c5c5c;
+  width: 40%;
+}
+
+.clock .numbers {
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  margin: 5%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 120px;
+  font-weight: 900;
+  opacity: .5;
+  overflow: hidden;
+  border-radius: 100%;
+}
+
+.clock .numbers .horizontal,
+.clock .numbers .vertical {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.clock .numbers .horizontal {
+  width: 110%;
+  height: auto;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  margin: 0 -5%;
+}
+
+.clock .numbers .vertical {
+  width: auto;
+  height: 120%;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: -10% 0;
+}
+/*# sourceMappingURL=style.css.map */
