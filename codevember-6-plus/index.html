@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>#Codevember 5: Reverse Time</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+
+  <div class="container">
+    <div class="cube">
+      <div class="side front"></div>
+      <div class="side vertical"></div>
+      <div class="side horizontal"></div>
+    </div>
+  </div>
+
+
+  <script>
+
+    var verticalSide = document.getElementsByClassName('vertical')[0];
+    var horizontalSide = document.getElementsByClassName('horizontal')[0];
+    var cube = document.getElementsByClassName('cube')[0];
+
+
+    onmousemove = function (e) {
+      let bodyVerticalCenter = document.body.clientWidth;
+      let bodyHorizontalCenter = document.body.clientHeight;
+
+      let mousePosX = e.x;
+      let mousePosY = e.y;
+
+      let horizontalRatio = ((mousePosX * 100) / bodyVerticalCenter) / 2;
+      let verticalRatio = ((mousePosY * 100) / bodyHorizontalCenter) / 2;
+
+      verticalSide.style.transform = "rotateY(calc(-" + horizontalRatio + "deg - 55deg)) translateZ(0px)";
+      horizontalSide.style.transform = "rotateX(calc(" + verticalRatio + "deg + 75deg)) translateZ(0px)";
+      cube.style.transform = "rotate3d(0, calc(-" + horizontalRatio + " - 12) ,calc(" + verticalRatio + " - 12), calc(15deg + " + horizontalRatio + "deg + " + verticalRatio + "deg)";
+
+
+    }
+
+  </script>
+
+
+
+</body>
+
+</html>
