@@ -11,3 +11,5 @@ Codevember etkinliği kapsamında kasım ayı boyunca her gün bir çalışma ek
 - [Codevember 5 - Reverse Time](https://abdullahturkmen.github.io/codevember-2021/codevember-5-reverse-time/)
 - [Codevember 6 - Plus](https://abdullahturkmen.github.io/codevember-2021/codevember-6-plus/)
 - [Codevember 7 - Provide](https://abdullahturkmen.github.io/codevember-2021/codevember-7-provide/)
+- [Codevember 8 - Deep](https://abdullahturkmen.github.io/codevember-2021/codevember-8-deep/)
+- [Codevember 9 - Poly City](https://abdullahturkmen.github.io/codevember-2021/codevember-9-poly-city/)

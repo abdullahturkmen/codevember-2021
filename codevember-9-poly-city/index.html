@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>#Codevember 9: Poly City</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="land">
+      <div class="land-side front"></div>
+      <div class="land-side left"></div>
+      <div class="land-side right"></div>
+      <div class="land-side back"></div>
+      <div class="land-side top"></div>
+      <div class="land-side bottom"></div>
+      <div class="tower">
+        <div class="side front"></div>
+        <div class="side left"></div>
+        <div class="side right"></div>
+        <div class="side back"></div>
+        <div class="side top"></div>
+      </div>
+      <div class="building">
+        <div class="side front"></div>
+        <div class="side left"></div>
+        <div class="side right"></div>
+        <div class="side back"></div>
+        <div class="side top"></div>
+      </div>
+      <div class="road">
+        <div class="footway footway-left">
+          <div class="footway-side front"></div>
+          <div class="footway-side left"></div>
+          <div class="footway-side right"></div>
+          <div class="footway-side back"></div>
+          <div class="footway-side top"></div>
+        </div>
+        <div class="footway footway-right">
+          <div class="footway-side front"></div>
+          <div class="footway-side left"></div>
+          <div class="footway-side right"></div>
+          <div class="footway-side back"></div>
+          <div class="footway-side top"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script>
+    
+    var land = document.getElementsByClassName('land')[0];
+
+    onmousemove = function (e) {
+      let bodyVerticalCenter = document.body.clientWidth;
+      let bodyHorizontalCenter = document.body.clientHeight;
+
+      let mousePosX = e.x;
+      let mousePosY = e.y;
+
+      let horizontalRatio = ((mousePosX * 100) / bodyVerticalCenter);
+      let verticalRatio = ((mousePosY * 100) / bodyHorizontalCenter) / 2;
+
+
+      land.style.transform = "rotateX(calc(" + verticalRatio + "deg - 35deg)) rotateY(calc(" + horizontalRatio + "deg - 30deg))";
+
+
+    }
+
+  </script>
+
+
+</body>
+
+</html>

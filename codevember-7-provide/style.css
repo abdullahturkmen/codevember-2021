@@ -1,5 +1,5 @@
 body {
-  background: burlywood;
+  background: #f44336;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -31,8 +31,8 @@ body {
 }
 
 .wifi::before {
-  -webkit-box-shadow: inset 0 0 0 40px #484848, inset 0 0 0 60px burlywood, inset 0 0 0 100px #484848, inset 0 0 0 120px burlywood, inset 0 0 0 160px #484848, inset 0 0 0 180px burlywood, inset 0 0 0 220px #484848, inset 0 0 0 260px burlywood;
-          box-shadow: inset 0 0 0 40px #484848, inset 0 0 0 60px burlywood, inset 0 0 0 100px #484848, inset 0 0 0 120px burlywood, inset 0 0 0 160px #484848, inset 0 0 0 180px burlywood, inset 0 0 0 220px #484848, inset 0 0 0 260px burlywood;
+  -webkit-box-shadow: inset 0 0 0 40px #484848, inset 0 0 0 60px #f44336, inset 0 0 0 100px #484848, inset 0 0 0 120px #f44336, inset 0 0 0 160px #484848, inset 0 0 0 180px #f44336, inset 0 0 0 220px #484848, inset 0 0 0 260px #f44336;
+          box-shadow: inset 0 0 0 40px #484848, inset 0 0 0 60px #f44336, inset 0 0 0 100px #484848, inset 0 0 0 120px #f44336, inset 0 0 0 160px #484848, inset 0 0 0 180px #f44336, inset 0 0 0 220px #484848, inset 0 0 0 260px #f44336;
   width: 200%;
   top: 0;
   left: 0;
@@ -48,47 +48,47 @@ body {
 
 @-webkit-keyframes wifi {
   0% {
-    -webkit-box-shadow: inset 0 0 0 40px burlywood, inset 0 0 0 60px burlywood, inset 0 0 0 100px #484848, inset 0 0 0 120px burlywood, inset 0 0 0 160px #484848, inset 0 0 0 180px burlywood, inset 0 0 0 220px #484848, inset 0 0 0 260px burlywood;
-            box-shadow: inset 0 0 0 40px burlywood, inset 0 0 0 60px burlywood, inset 0 0 0 100px #484848, inset 0 0 0 120px burlywood, inset 0 0 0 160px #484848, inset 0 0 0 180px burlywood, inset 0 0 0 220px #484848, inset 0 0 0 260px burlywood;
+    -webkit-box-shadow: inset 0 0 0 40px #f44336, inset 0 0 0 60px #f44336, inset 0 0 0 100px #484848, inset 0 0 0 120px #f44336, inset 0 0 0 160px #484848, inset 0 0 0 180px #f44336, inset 0 0 0 220px #484848, inset 0 0 0 260px #f44336;
+            box-shadow: inset 0 0 0 40px #f44336, inset 0 0 0 60px #f44336, inset 0 0 0 100px #484848, inset 0 0 0 120px #f44336, inset 0 0 0 160px #484848, inset 0 0 0 180px #f44336, inset 0 0 0 220px #484848, inset 0 0 0 260px #f44336;
   }
   25% {
-    -webkit-box-shadow: inset 0 0 0 40px burlywood, inset 0 0 0 60px burlywood, inset 0 0 0 100px burlywood, inset 0 0 0 120px burlywood, inset 0 0 0 160px #484848, inset 0 0 0 180px burlywood, inset 0 0 0 220px #484848, inset 0 0 0 260px burlywood;
-            box-shadow: inset 0 0 0 40px burlywood, inset 0 0 0 60px burlywood, inset 0 0 0 100px burlywood, inset 0 0 0 120px burlywood, inset 0 0 0 160px #484848, inset 0 0 0 180px burlywood, inset 0 0 0 220px #484848, inset 0 0 0 260px burlywood;
+    -webkit-box-shadow: inset 0 0 0 40px #f44336, inset 0 0 0 60px #f44336, inset 0 0 0 100px #f44336, inset 0 0 0 120px #f44336, inset 0 0 0 160px #484848, inset 0 0 0 180px #f44336, inset 0 0 0 220px #484848, inset 0 0 0 260px #f44336;
+            box-shadow: inset 0 0 0 40px #f44336, inset 0 0 0 60px #f44336, inset 0 0 0 100px #f44336, inset 0 0 0 120px #f44336, inset 0 0 0 160px #484848, inset 0 0 0 180px #f44336, inset 0 0 0 220px #484848, inset 0 0 0 260px #f44336;
   }
   50% {
-    -webkit-box-shadow: inset 0 0 0 40px burlywood, inset 0 0 0 60px burlywood, inset 0 0 0 100px burlywood, inset 0 0 0 120px burlywood, inset 0 0 0 160px burlywood, inset 0 0 0 180px burlywood, inset 0 0 0 220px #484848, inset 0 0 0 260px burlywood;
-            box-shadow: inset 0 0 0 40px burlywood, inset 0 0 0 60px burlywood, inset 0 0 0 100px burlywood, inset 0 0 0 120px burlywood, inset 0 0 0 160px burlywood, inset 0 0 0 180px burlywood, inset 0 0 0 220px #484848, inset 0 0 0 260px burlywood;
+    -webkit-box-shadow: inset 0 0 0 40px #f44336, inset 0 0 0 60px #f44336, inset 0 0 0 100px #f44336, inset 0 0 0 120px #f44336, inset 0 0 0 160px #f44336, inset 0 0 0 180px #f44336, inset 0 0 0 220px #484848, inset 0 0 0 260px #f44336;
+            box-shadow: inset 0 0 0 40px #f44336, inset 0 0 0 60px #f44336, inset 0 0 0 100px #f44336, inset 0 0 0 120px #f44336, inset 0 0 0 160px #f44336, inset 0 0 0 180px #f44336, inset 0 0 0 220px #484848, inset 0 0 0 260px #f44336;
   }
   75% {
-    -webkit-box-shadow: inset 0 0 0 40px burlywood, inset 0 0 0 60px burlywood, inset 0 0 0 100px burlywood, inset 0 0 0 120px burlywood, inset 0 0 0 160px burlywood, inset 0 0 0 180px burlywood, inset 0 0 0 220px burlywood, inset 0 0 0 260px burlywood;
-            box-shadow: inset 0 0 0 40px burlywood, inset 0 0 0 60px burlywood, inset 0 0 0 100px burlywood, inset 0 0 0 120px burlywood, inset 0 0 0 160px burlywood, inset 0 0 0 180px burlywood, inset 0 0 0 220px burlywood, inset 0 0 0 260px burlywood;
+    -webkit-box-shadow: inset 0 0 0 40px #f44336, inset 0 0 0 60px #f44336, inset 0 0 0 100px #f44336, inset 0 0 0 120px #f44336, inset 0 0 0 160px #f44336, inset 0 0 0 180px #f44336, inset 0 0 0 220px #f44336, inset 0 0 0 260px #f44336;
+            box-shadow: inset 0 0 0 40px #f44336, inset 0 0 0 60px #f44336, inset 0 0 0 100px #f44336, inset 0 0 0 120px #f44336, inset 0 0 0 160px #f44336, inset 0 0 0 180px #f44336, inset 0 0 0 220px #f44336, inset 0 0 0 260px #f44336;
   }
   100% {
-    -webkit-box-shadow: inset 0 0 0 40px #484848, inset 0 0 0 60px burlywood, inset 0 0 0 100px #484848, inset 0 0 0 120px burlywood, inset 0 0 0 160px #484848, inset 0 0 0 180px burlywood, inset 0 0 0 220px #484848, inset 0 0 0 260px burlywood;
-            box-shadow: inset 0 0 0 40px #484848, inset 0 0 0 60px burlywood, inset 0 0 0 100px #484848, inset 0 0 0 120px burlywood, inset 0 0 0 160px #484848, inset 0 0 0 180px burlywood, inset 0 0 0 220px #484848, inset 0 0 0 260px burlywood;
+    -webkit-box-shadow: inset 0 0 0 40px #484848, inset 0 0 0 60px #f44336, inset 0 0 0 100px #484848, inset 0 0 0 120px #f44336, inset 0 0 0 160px #484848, inset 0 0 0 180px #f44336, inset 0 0 0 220px #484848, inset 0 0 0 260px #f44336;
+            box-shadow: inset 0 0 0 40px #484848, inset 0 0 0 60px #f44336, inset 0 0 0 100px #484848, inset 0 0 0 120px #f44336, inset 0 0 0 160px #484848, inset 0 0 0 180px #f44336, inset 0 0 0 220px #484848, inset 0 0 0 260px #f44336;
   }
 }
 
 @keyframes wifi {
   0% {
-    -webkit-box-shadow: inset 0 0 0 40px burlywood, inset 0 0 0 60px burlywood, inset 0 0 0 100px #484848, inset 0 0 0 120px burlywood, inset 0 0 0 160px #484848, inset 0 0 0 180px burlywood, inset 0 0 0 220px #484848, inset 0 0 0 260px burlywood;
-            box-shadow: inset 0 0 0 40px burlywood, inset 0 0 0 60px burlywood, inset 0 0 0 100px #484848, inset 0 0 0 120px burlywood, inset 0 0 0 160px #484848, inset 0 0 0 180px burlywood, inset 0 0 0 220px #484848, inset 0 0 0 260px burlywood;
+    -webkit-box-shadow: inset 0 0 0 40px #f44336, inset 0 0 0 60px #f44336, inset 0 0 0 100px #484848, inset 0 0 0 120px #f44336, inset 0 0 0 160px #484848, inset 0 0 0 180px #f44336, inset 0 0 0 220px #484848, inset 0 0 0 260px #f44336;
+            box-shadow: inset 0 0 0 40px #f44336, inset 0 0 0 60px #f44336, inset 0 0 0 100px #484848, inset 0 0 0 120px #f44336, inset 0 0 0 160px #484848, inset 0 0 0 180px #f44336, inset 0 0 0 220px #484848, inset 0 0 0 260px #f44336;
   }
   25% {
-    -webkit-box-shadow: inset 0 0 0 40px burlywood, inset 0 0 0 60px burlywood, inset 0 0 0 100px burlywood, inset 0 0 0 120px burlywood, inset 0 0 0 160px #484848, inset 0 0 0 180px burlywood, inset 0 0 0 220px #484848, inset 0 0 0 260px burlywood;
-            box-shadow: inset 0 0 0 40px burlywood, inset 0 0 0 60px burlywood, inset 0 0 0 100px burlywood, inset 0 0 0 120px burlywood, inset 0 0 0 160px #484848, inset 0 0 0 180px burlywood, inset 0 0 0 220px #484848, inset 0 0 0 260px burlywood;
+    -webkit-box-shadow: inset 0 0 0 40px #f44336, inset 0 0 0 60px #f44336, inset 0 0 0 100px #f44336, inset 0 0 0 120px #f44336, inset 0 0 0 160px #484848, inset 0 0 0 180px #f44336, inset 0 0 0 220px #484848, inset 0 0 0 260px #f44336;
+            box-shadow: inset 0 0 0 40px #f44336, inset 0 0 0 60px #f44336, inset 0 0 0 100px #f44336, inset 0 0 0 120px #f44336, inset 0 0 0 160px #484848, inset 0 0 0 180px #f44336, inset 0 0 0 220px #484848, inset 0 0 0 260px #f44336;
   }
   50% {
-    -webkit-box-shadow: inset 0 0 0 40px burlywood, inset 0 0 0 60px burlywood, inset 0 0 0 100px burlywood, inset 0 0 0 120px burlywood, inset 0 0 0 160px burlywood, inset 0 0 0 180px burlywood, inset 0 0 0 220px #484848, inset 0 0 0 260px burlywood;
-            box-shadow: inset 0 0 0 40px burlywood, inset 0 0 0 60px burlywood, inset 0 0 0 100px burlywood, inset 0 0 0 120px burlywood, inset 0 0 0 160px burlywood, inset 0 0 0 180px burlywood, inset 0 0 0 220px #484848, inset 0 0 0 260px burlywood;
+    -webkit-box-shadow: inset 0 0 0 40px #f44336, inset 0 0 0 60px #f44336, inset 0 0 0 100px #f44336, inset 0 0 0 120px #f44336, inset 0 0 0 160px #f44336, inset 0 0 0 180px #f44336, inset 0 0 0 220px #484848, inset 0 0 0 260px #f44336;
+            box-shadow: inset 0 0 0 40px #f44336, inset 0 0 0 60px #f44336, inset 0 0 0 100px #f44336, inset 0 0 0 120px #f44336, inset 0 0 0 160px #f44336, inset 0 0 0 180px #f44336, inset 0 0 0 220px #484848, inset 0 0 0 260px #f44336;
   }
   75% {
-    -webkit-box-shadow: inset 0 0 0 40px burlywood, inset 0 0 0 60px burlywood, inset 0 0 0 100px burlywood, inset 0 0 0 120px burlywood, inset 0 0 0 160px burlywood, inset 0 0 0 180px burlywood, inset 0 0 0 220px burlywood, inset 0 0 0 260px burlywood;
-            box-shadow: inset 0 0 0 40px burlywood, inset 0 0 0 60px burlywood, inset 0 0 0 100px burlywood, inset 0 0 0 120px burlywood, inset 0 0 0 160px burlywood, inset 0 0 0 180px burlywood, inset 0 0 0 220px burlywood, inset 0 0 0 260px burlywood;
+    -webkit-box-shadow: inset 0 0 0 40px #f44336, inset 0 0 0 60px #f44336, inset 0 0 0 100px #f44336, inset 0 0 0 120px #f44336, inset 0 0 0 160px #f44336, inset 0 0 0 180px #f44336, inset 0 0 0 220px #f44336, inset 0 0 0 260px #f44336;
+            box-shadow: inset 0 0 0 40px #f44336, inset 0 0 0 60px #f44336, inset 0 0 0 100px #f44336, inset 0 0 0 120px #f44336, inset 0 0 0 160px #f44336, inset 0 0 0 180px #f44336, inset 0 0 0 220px #f44336, inset 0 0 0 260px #f44336;
   }
   100% {
-    -webkit-box-shadow: inset 0 0 0 40px #484848, inset 0 0 0 60px burlywood, inset 0 0 0 100px #484848, inset 0 0 0 120px burlywood, inset 0 0 0 160px #484848, inset 0 0 0 180px burlywood, inset 0 0 0 220px #484848, inset 0 0 0 260px burlywood;
-            box-shadow: inset 0 0 0 40px #484848, inset 0 0 0 60px burlywood, inset 0 0 0 100px #484848, inset 0 0 0 120px burlywood, inset 0 0 0 160px #484848, inset 0 0 0 180px burlywood, inset 0 0 0 220px #484848, inset 0 0 0 260px burlywood;
+    -webkit-box-shadow: inset 0 0 0 40px #484848, inset 0 0 0 60px #f44336, inset 0 0 0 100px #484848, inset 0 0 0 120px #f44336, inset 0 0 0 160px #484848, inset 0 0 0 180px #f44336, inset 0 0 0 220px #484848, inset 0 0 0 260px #f44336;
+            box-shadow: inset 0 0 0 40px #484848, inset 0 0 0 60px #f44336, inset 0 0 0 100px #484848, inset 0 0 0 120px #f44336, inset 0 0 0 160px #484848, inset 0 0 0 180px #f44336, inset 0 0 0 220px #484848, inset 0 0 0 260px #f44336;
   }
 }
 /*# sourceMappingURL=style.css.map */

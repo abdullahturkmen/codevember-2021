@@ -1,0 +1,359 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #0e264e;
+  background: radial-gradient(circle, #0e264e 0%, #38547e 0%, #0e264e 100%);
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  width: 400px;
+  height: 400px;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-perspective: 800px;
+          perspective: 800px;
+  -webkit-perspective-origin: top right;
+          perspective-origin: top right;
+}
+
+.container .land {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: rotateX(-20deg) rotateY(-20deg);
+          transform: rotateX(-20deg) rotateY(-20deg);
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+}
+
+.container .land-side {
+  position: absolute;
+  width: 100%;
+  background: #f3dbaf;
+  background: linear-gradient(45deg, #f3dbaf 0%, #c6b18c 100%);
+}
+
+.container .land-side.front {
+  -webkit-transform: translateZ(100px);
+          transform: translateZ(100px);
+  height: 50px;
+}
+
+.container .land-side.back {
+  -webkit-transform: translateZ(-100px);
+          transform: translateZ(-100px);
+  height: 50px;
+}
+
+.container .land-side.left {
+  -webkit-transform: rotateY(90deg) translateZ(100px);
+          transform: rotateY(90deg) translateZ(100px);
+  height: 50px;
+}
+
+.container .land-side.right {
+  -webkit-transform: rotateY(-90deg) translateZ(100px);
+          transform: rotateY(-90deg) translateZ(100px);
+  height: 50px;
+}
+
+.container .land-side.top {
+  background-color: wheat;
+  -webkit-transform: rotateX(90deg) translateZ(100px);
+          transform: rotateX(90deg) translateZ(100px);
+  height: 100%;
+}
+
+.container .land-side.bottom {
+  background: black;
+  background-color: black;
+  -webkit-transform: rotateX(-90deg) translateZ(-50px);
+          transform: rotateX(-90deg) translateZ(-50px);
+  height: 100%;
+}
+
+.container .land .tower {
+  width: 50px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: translateZ(-60px) translateX(-60px) translateY(-200px);
+          transform: translateZ(-60px) translateX(-60px) translateY(-200px);
+}
+
+.container .land .tower .side {
+  position: absolute;
+  width: 100%;
+  background: #bf4a70;
+  background: linear-gradient(45deg, #bf4a70 0%, #6c1a35 100%);
+}
+
+.container .land .tower .side::before, .container .land .tower .side::after {
+  content: "";
+  width: 40%;
+  height: 15px;
+  background: #48eaff;
+  position: absolute;
+  top: 10px;
+  -webkit-box-shadow: 0 20px 0 0 #48eaff, 0 40px 0 0 #48eaff, 0 60px 10px 5px #ffda48, 0 80px 0 0 #48eaff, 0 100px 0 0 #48eaff, 0 120px 0 0 #48eaff, 0 140px 0 0 #48eaff, 0 160px 0 0 #48eaff;
+          box-shadow: 0 20px 0 0 #48eaff, 0 40px 0 0 #48eaff, 0 60px 10px 5px #ffda48, 0 80px 0 0 #48eaff, 0 100px 0 0 #48eaff, 0 120px 0 0 #48eaff, 0 140px 0 0 #48eaff, 0 160px 0 0 #48eaff;
+}
+
+.container .land .tower .side::before {
+  left: 5%;
+}
+
+.container .land .tower .side::after {
+  right: 5%;
+}
+
+.container .land .tower .side.front {
+  -webkit-transform: translateZ(25px);
+          transform: translateZ(25px);
+  height: 200px;
+}
+
+.container .land .tower .side.back {
+  -webkit-transform: translateZ(-25px);
+          transform: translateZ(-25px);
+  height: 200px;
+}
+
+.container .land .tower .side.left {
+  -webkit-transform: rotateY(90deg) translateZ(25px);
+          transform: rotateY(90deg) translateZ(25px);
+  height: 200px;
+}
+
+.container .land .tower .side.right {
+  -webkit-transform: rotateY(-90deg) translateZ(25px);
+          transform: rotateY(-90deg) translateZ(25px);
+  height: 200px;
+}
+
+.container .land .tower .side.top {
+  background: #d9d9d9;
+  -webkit-transform: rotateX(90deg) translateZ(25px);
+          transform: rotateX(90deg) translateZ(25px);
+  height: 50px;
+}
+
+.container .land .tower .side.top::before, .container .land .tower .side.top::after {
+  display: none;
+}
+
+.container .land .building {
+  width: 50px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: translateZ(-50px) translateX(10px) translateY(-50px);
+          transform: translateZ(-50px) translateX(10px) translateY(-50px);
+}
+
+.container .land .building .side {
+  position: absolute;
+  width: 100%;
+  background: #759bb9;
+  background: -webkit-gradient(linear, left top, left bottom, from(#759bb9), to(#48647a));
+  background: linear-gradient(180deg, #759bb9 0%, #48647a 100%);
+}
+
+.container .land .building .side::before, .container .land .building .side::after {
+  content: "";
+  width: 15px;
+  height: 30px;
+  background: #48eaff;
+  position: absolute;
+  top: 10px;
+}
+
+.container .land .building .side::before {
+  left: 5px;
+}
+
+.container .land .building .side::after {
+  right: 5px;
+}
+
+.container .land .building .side.front::before, .container .land .building .side.back::before {
+  -webkit-box-shadow: 25px -5px 0 0 #48eaff, 40px -5px 0 0 #48eaff, 50px -5px 0 0 #48eaff, 25px 20px 0 0 #48eaff, 40px 20px 0 0 #48eaff, 50px 20px 0 0 #48eaff;
+          box-shadow: 25px -5px 0 0 #48eaff, 40px -5px 0 0 #48eaff, 50px -5px 0 0 #48eaff, 25px 20px 0 0 #48eaff, 40px 20px 0 0 #48eaff, 50px 20px 0 0 #48eaff;
+}
+
+.container .land .building .side.front {
+  -webkit-transform: translateZ(35px);
+          transform: translateZ(35px);
+  height: 50px;
+  width: 100px;
+}
+
+.container .land .building .side.back {
+  -webkit-transform: translateZ(-35px);
+          transform: translateZ(-35px);
+  height: 50px;
+  width: 100px;
+}
+
+.container .land .building .side.left {
+  -webkit-transform: rotateY(90deg) translateZ(65px);
+          transform: rotateY(90deg) translateZ(65px);
+  height: 50px;
+  width: 70px;
+}
+
+.container .land .building .side.right {
+  -webkit-transform: rotateY(-90deg) translateZ(35px);
+          transform: rotateY(-90deg) translateZ(35px);
+  height: 50px;
+  width: 70px;
+}
+
+.container .land .building .side.top {
+  background: #c28584;
+  background: linear-gradient(45deg, #c28584 0%, #aa5f5e 100%);
+  -webkit-transform: rotateX(90deg) translateZ(35px);
+          transform: rotateX(90deg) translateZ(35px);
+  height: 70px;
+  width: 100px;
+}
+
+.container .land .building .side.top::before, .container .land .building .side.top::after {
+  display: none;
+}
+
+.container .land .road {
+  background: #262626;
+  -webkit-transform: rotateX(90deg) translateZ(101px) translateX(0) translateY(0);
+          transform: rotateX(90deg) translateZ(101px) translateX(0) translateY(0);
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.container .land .road::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 5px;
+  background: #eaeaea;
+  top: 125px;
+  left: 15px;
+  -webkit-box-shadow: 65px 0 0 0 #eaeaea, 130px 0 0 0 #eaeaea;
+          box-shadow: 65px 0 0 0 #eaeaea, 130px 0 0 0 #eaeaea;
+}
+
+.container .land .road .footway {
+  width: 100%;
+  -webkit-transform: translateZ(2.5px);
+          transform: translateZ(2.5px);
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.container .land .road .footway-left {
+  height: 100px;
+}
+
+.container .land .road .footway-left .back {
+  -webkit-transform: rotateX(90deg) translateZ(-97.5px);
+          transform: rotateX(90deg) translateZ(-97.5px);
+  height: 5px;
+}
+
+.container .land .road .footway-left .left {
+  -webkit-transform: rotateY(90deg) translateZ(150px) rotateZ(90deg) translateX(47.5px);
+          transform: rotateY(90deg) translateZ(150px) rotateZ(90deg) translateX(47.5px);
+  height: 5px;
+  width: 100px;
+}
+
+.container .land .road .footway-left .right {
+  -webkit-transform: rotateY(-90deg) translateZ(50px) rotateZ(90deg) translateX(47.5px);
+          transform: rotateY(-90deg) translateZ(50px) rotateZ(90deg) translateX(47.5px);
+  height: 5px;
+  width: 100px;
+}
+
+.container .land .road .footway-right {
+  height: 40px;
+}
+
+.container .land .road .footway-right .back {
+  -webkit-transform: rotateX(90deg) translateZ(-37.5px);
+          transform: rotateX(90deg) translateZ(-37.5px);
+  height: 5px;
+}
+
+.container .land .road .footway-right .left {
+  -webkit-transform: rotateY(90deg) translateZ(180px) rotateZ(90deg) translateX(17.5px);
+          transform: rotateY(90deg) translateZ(180px) rotateZ(90deg) translateX(17.5px);
+  height: 5px;
+  width: 40px;
+}
+
+.container .land .road .footway-right .right {
+  -webkit-transform: rotateY(-90deg) translateZ(20px) rotateZ(90deg) translateX(17.5px);
+          transform: rotateY(-90deg) translateZ(20px) rotateZ(90deg) translateX(17.5px);
+  height: 5px;
+  width: 40px;
+}
+
+.container .land .road .footway-side {
+  position: absolute;
+  width: 100%;
+  background: #747474;
+  background: linear-gradient(45deg, #666666 0%, #4a4a4a 100%);
+}
+
+.container .land .road .footway-side.front {
+  -webkit-transform: rotatex(90deg) translateZ(2.5px);
+          transform: rotatex(90deg) translateZ(2.5px);
+  height: 5px;
+}
+
+.container .land .road .footway-side.top {
+  background: #747474;
+  background: linear-gradient(45deg, #747474 0%, #818181 100%);
+  -webkit-transform: translateZ(2.5px);
+          transform: translateZ(2.5px);
+  height: 100%;
+}
+/*# sourceMappingURL=style.css.map */
