@@ -1,0 +1,11 @@
+//animasyon seçenekleri arttırılabilir
+@keyframes drop {
+    from {
+        width: 0;
+        opacity: 1;
+    }
+    to {
+        width: 125%;
+        opacity: 0;
+    }
+}

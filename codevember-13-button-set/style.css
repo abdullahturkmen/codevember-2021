@@ -1,0 +1,155 @@
+@import url("./keyframes.css");
+@import url("./colors.css");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: white;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0) 0%, #dfdfdf 100%);
+}
+
+.bttn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 0;
+  font-size: 20px;
+  background-color: #00adad;
+  color: #fff;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.bttn.cross-lines {
+  position: relative;
+}
+
+.bttn.cross-lines:before, .bttn.cross-lines:after {
+  content: "";
+  position: absolute;
+  height: 200%;
+  top: -50%;
+  width: 8px;
+  background: #ffffffa8;
+  -webkit-transition: all 0.8s linear;
+  transition: all 0.8s linear;
+}
+
+.bttn.cross-lines:before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  left: -100%;
+}
+
+.bttn.cross-lines:after {
+  -webkit-transform: rotate(-25deg);
+          transform: rotate(-25deg);
+  right: -100%;
+}
+
+.bttn.cross-lines:hover:before {
+  left: 150%;
+}
+
+.bttn.cross-lines:hover:after {
+  right: 150%;
+}
+
+.bttn.parallel-lines {
+  position: relative;
+}
+
+.bttn.parallel-lines:before, .bttn.parallel-lines:after {
+  content: "";
+  position: absolute;
+  height: 200%;
+  top: -50%;
+  width: 8px;
+  background: #ffffffa8;
+  -webkit-transition: all 0.8s linear;
+  transition: all 0.8s linear;
+}
+
+.bttn.parallel-lines:before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  left: -150%;
+}
+
+.bttn.parallel-lines:after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  left: -170%;
+}
+
+.bttn.parallel-lines:hover:before {
+  left: 170%;
+}
+
+.bttn.parallel-lines:hover:after {
+  left: 150%;
+}
+
+.bttn.parallel-lines.reverse:before {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  left: 150%;
+}
+
+.bttn.parallel-lines.reverse:after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  left: 170%;
+}
+
+.bttn.parallel-lines.reverse:hover:before {
+  left: -170%;
+}
+
+.bttn.parallel-lines.reverse:hover:after {
+  left: -150%;
+}
+
+.bttn.drop {
+  position: relative;
+}
+
+.bttn.drop:before, .bttn.drop:after {
+  content: "";
+  position: absolute;
+  aspect-ratio: 1/1;
+  top: 50%;
+  left: 50%;
+  background: #ffffffa8;
+  -webkit-transition: all 0.8s linear;
+  transition: all 0.8s linear;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 100%;
+}
+
+.bttn.drop:hover:before {
+  -webkit-animation: drop 1.5s linear 0s infinite;
+          animation: drop 1.5s linear 0s infinite;
+}
+
+.bttn.drop:hover:after {
+  -webkit-animation: drop 1.5s linear 0.35s infinite;
+          animation: drop 1.5s linear 0.35s infinite;
+}
+/*# sourceMappingURL=style.css.map */

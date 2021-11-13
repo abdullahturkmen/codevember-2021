@@ -1,0 +1,133 @@
+@import url("./keyframes.css");
+@import url("./colors.css");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(255, 255, 255);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0) 0%, rgba(223, 223, 223, 1) 100%);
+}
+
+.bttn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 0;
+  font-size: 20px;
+  background-color: #00adad;
+  color: #fff;
+  overflow: hidden;
+  cursor: pointer;
+
+  &.cross-lines {
+    position: relative;
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      height: 200%;
+      top: -50%;
+      width: 8px;
+      background: #ffffffa8;
+      transition: all 0.8s linear;
+    }
+    &:before {
+      transform: rotate(45deg);
+      left: -100%;
+    }
+    &:after {
+      transform: rotate(-25deg);
+      right: -100%;
+    }
+    &:hover {
+      &:before {
+        left: 150%;
+      }
+      &:after {
+        right: 150%;
+      }
+    }
+  }
+
+  &.parallel-lines {
+    position: relative;
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      height: 200%;
+      top: -50%;
+      width: 8px;
+      background: #ffffffa8;
+      transition: all 0.8s linear;
+    }
+    &:before {
+      transform: rotate(45deg);
+      left: -150%;
+    }
+    &:after {
+      transform: rotate(45deg);
+      left: -170%;
+    }
+    &:hover {
+      &:before {
+        left: 170%;
+      }
+      &:after {
+        left: 150%;
+      }
+    }
+
+    &.reverse {
+      &:before {
+        transform: rotate(-45deg);
+        left: 150%;
+      }
+      &:after {
+        transform: rotate(-45deg);
+        left: 170%;
+      }
+      &:hover {
+        &:before {
+          left: -170%;
+        }
+        &:after {
+          left: -150%;
+        }
+      }
+    }
+  }
+
+  &.drop {
+    position: relative;
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      aspect-ratio: 1/1;
+      top: 50%;
+      left: 50%;
+      background: #ffffffa8;
+      transition: all 0.8s linear;
+      transform: translate(-50%, -50%);
+      border-radius: 100%;
+    }
+
+    &:hover {
+      &:before {
+        animation: drop 1.5s linear 0s infinite;
+      }
+      &:after {
+        animation: drop 1.5s linear 0.35s infinite;
+      }
+    }
+  }
+}

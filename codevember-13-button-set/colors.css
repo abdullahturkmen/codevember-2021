@@ -1,0 +1,20 @@
+.bg-green-to-blue {
+  background-image: -webkit-gradient(linear, right top, left top, from(#0276b0), color-stop(51%, #00b294));
+  background-image: linear-gradient(to left, #0276b0 0%, #00b294 51%);
+}
+
+.bg-green-to-red {
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(51%, #0abfbc), to(#fc354c));
+  background-image: linear-gradient(to right, #0abfbc 51%, #fc354c 100%);
+}
+
+.bg-darkred-to-pink {
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(51%, #33001b), to(#ff0084));
+  background-image: linear-gradient(to right, #33001b 51%, #ff0084 100%);
+}
+
+.bg-powderpink-to-white {
+  background-image: -webkit-gradient(linear, left top, right top, from(#ee9ca7), color-stop(51%, #ffdde1));
+  background-image: linear-gradient(to right, #ee9ca7 0%, #ffdde1 51%);
+}
+/*# sourceMappingURL=colors.css.map */
