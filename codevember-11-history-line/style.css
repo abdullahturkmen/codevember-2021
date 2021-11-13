@@ -1,0 +1,187 @@
+.graphic-history {
+  width: 100%;
+  padding: 1em 20px;
+}
+
+.graphic-history-title {
+  font-size: 22px;
+  color: #252834;
+  font-weight: 500;
+  text-align: center;
+  padding: 1em 0;
+}
+
+.graphic-history-line {
+  width: 100%;
+  position: relative;
+  padding: 2em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: none !important;
+}
+
+.graphic-history-line:before {
+  content: '';
+  width: calc(100% - 10px);
+  height: 2px;
+  background: #CFD7DF;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.graphic-history-line-item {
+  position: relative;
+}
+
+.graphic-history-line-item:hover {
+  cursor: pointer;
+}
+
+.graphic-history-line-item:hover span {
+  background: #9f2c00;
+}
+
+.graphic-history-line-item.nav-item:before, .graphic-history-line-item.nav-item:after {
+  display: none;
+}
+
+.graphic-history-line-item.nav-item:hover {
+  background: transparent;
+}
+
+.graphic-history-line-item.nav-item:hover .nav-link:before, .graphic-history-line-item.nav-item:hover .nav-link:after {
+  background: #9f2c00;
+}
+
+.graphic-history-line-item.nav-item:hover .nav-link span {
+  background: #9f2c00;
+}
+
+.graphic-history-line-item.nav-item .nav-link {
+  border: none;
+  background-color: transparent !important;
+}
+
+.graphic-history-line-item.nav-item .nav-link.active {
+  cursor: pointer;
+}
+
+.graphic-history-line-item.nav-item .nav-link.active:before, .graphic-history-line-item.nav-item .nav-link.active:after {
+  background: #9f2c00;
+}
+
+.graphic-history-line-item.nav-item .nav-link.active span {
+  background: #9f2c00;
+}
+
+.graphic-history-line-item.nav-item .nav-link:before, .graphic-history-line-item.nav-item .nav-link:after {
+  content: '';
+  background: inherit;
+  border-radius: 100%;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.graphic-history-line-item.nav-item .nav-link:before {
+  width: 20px;
+  height: 20px;
+  background: #CFD7DF;
+}
+
+.graphic-history-line-item.nav-item .nav-link:after {
+  width: 16px;
+  height: 16px;
+  background: #CFD7DF;
+  border: 3px solid #fff;
+}
+
+.graphic-history-line-item span {
+  position: absolute;
+  top: 2em;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  background: #CFD7DF;
+  border-radius: 100px !important;
+  color: #fff;
+  padding: 2px 10px;
+}
+
+.graphic-history-line-item.prev-btn, .graphic-history-line-item.next-btn {
+  width: 28px;
+  height: 28px;
+  background: #CFD7DF;
+  border-radius: 100%;
+}
+
+.graphic-history-line-item.prev-btn:before, .graphic-history-line-item.next-btn:before {
+  display: none;
+}
+
+.graphic-history-line-item.prev-btn:after, .graphic-history-line-item.next-btn:after {
+  content: "";
+  padding-right: 0;
+  width: 8px;
+  height: 8px;
+  border-width: 0;
+  border-style: solid;
+  border-color: #fff;
+  -webkit-transform: rotate(315deg);
+          transform: rotate(315deg);
+  position: absolute;
+  top: 10px;
+  border-radius: 0;
+  left: 10px;
+}
+
+.graphic-history-line-item.prev-btn:hover, .graphic-history-line-item.next-btn:hover {
+  background: #9f2c00;
+}
+
+.graphic-history-line-item.prev-btn:after {
+  border-top-width: 2px !important;
+  border-left-width: 2px !important;
+}
+
+.graphic-history-line-item.next-btn:after {
+  border-bottom-width: 2px !important;
+  border-right-width: 2px !important;
+}
+
+.graphic-history-content {
+  width: 100%;
+  padding: 3em 0 2em;
+}
+
+.graphic-history-content-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.graphic-history-content-img {
+  width: calc(50% - 15px);
+  margin-right: 15px;
+}
+
+.graphic-history-content-img img {
+  width: 100%;
+}
+
+.graphic-history-content-text {
+  width: calc(50% - 15px);
+  margin-left: 15px;
+}
+/*# sourceMappingURL=style.css.map */

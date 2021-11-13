@@ -1,0 +1,120 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+body {
+    background: #3641af;
+    background: linear-gradient(135deg, #020310 0%, #3641af 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    &::after {
+        content: "";
+        width: 1px;
+        height: 1px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        @function stars() {
+            $val: 0px 0px #fff;
+            @for $i from 1 through 500 {
+                $val: #{$val}, #{random(2400)}px #{random(1350)}px 0 #fff;
+            }
+            @return $val;
+        }
+        box-shadow: stars();
+    }
+}
+
+.night {
+    .moon {
+        position: absolute;
+        left: 35%;
+        top: 15%;
+        width: 3%;
+        aspect-ratio: 1;
+        border-radius: 100%;
+        background-color: #ffffbb;
+        box-shadow: 0 0 10px 10px #ffffbb;
+    }
+
+    .fireflys {
+        .firefly {
+            position: absolute;
+            left: 20%;
+            top: 30%;
+            width: 0.3%;
+            background-color: #eb721c;
+            box-shadow: 0 0 10px 3px #f9b334;
+            border-radius: 100%;
+            aspect-ratio: 1/2;
+            animation: firefly 5s linear infinite;
+            opacity: 0;
+
+            &:nth-child(2) {
+                left: 10%;
+                top: 90%;
+                animation-delay: 1s;
+            }
+            &:nth-child(3) {
+                left: 80%;
+                top: 40%;
+                animation-delay: 2s;
+            }
+            &:nth-child(4) {
+                left: 60%;
+                top: 70%;
+                animation-delay: 3s;
+            }
+        }
+    }
+
+    .falling-star{
+        position: absolute;
+            left: 80%;
+            top: -20%;
+            background-color: #ffffbb;
+            width: .3%;
+            aspect-ratio: 1/5;
+            border-radius: 100%;
+            box-shadow: 0 0 10px 3px #ffffbb;
+            transform: rotate(70deg);
+            animation: falling 5s linear infinite;
+    }
+}
+
+@keyframes firefly {
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+    100% {
+    }
+}
+
+
+
+@keyframes falling {
+    0% {
+        left: 80%;
+            top: -20%;
+    }
+  
+    20% {
+        left: -20%;
+            top: 70%;
+    }
+    100% {
+        left: -20%;
+            top: 70%;
+    }
+}
