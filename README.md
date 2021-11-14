@@ -17,3 +17,4 @@ Codevember etkinliği kapsamında kasım ayı boyunca her gün bir çalışma ek
 - [Codevember 11 - History Line](https://abdullahturkmen.github.io/codevember-2021/codevember-11-history-line/)
 - [Codevember 12 - Bounce Ball](https://abdullahturkmen.github.io/codevember-2021/codevember-12-bounce-ball/)
 - [Codevember 13 - Button Set](https://abdullahturkmen.github.io/codevember-2021/codevember-13-button-set/)
+- [Codevember 14 - Gift](https://abdullahturkmen.github.io/codevember-2021/codevember-14-gift/)
