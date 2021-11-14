@@ -1,0 +1,152 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(255, 255, 255);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0) 0%, rgba(160, 242, 255, 1) 100%);
+  overflow: hidden;
+}
+
+.content {
+  animation: flying 20s linear infinite;
+  position: absolute;
+  .parachute {
+    width: 200px;
+    height: 95px;
+    border-top-right-radius: 370px;
+    border-top-left-radius: 370px;
+    background: radial-gradient(circle at 100px 10px, #ff3939, #5c0000);
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 100%;
+      position: absolute;
+      background-color: #6e0000;
+      height: 20px;
+      border-radius: 100%;
+      bottom: -10px;
+      border: 2px solid #8f8f8f;
+    }
+
+    &-rope {
+      width: 200px;
+      aspect-ratio: 2/1;
+      position: relative;
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background: #494949;
+      }
+
+      &::before {
+        transform: rotate(45deg);
+        transform-origin: left;
+      }
+      &::after {
+        transform: rotate(-45deg);
+        transform-origin: right;
+      }
+    }
+  }
+
+  .gift {
+    width: 150px;
+    aspect-ratio: 1;
+    background-color: purple;
+    position: relative;
+    animation: gift 3s ease infinite;
+    transform-origin: top;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: red;
+      border-color: white;
+      border-style: solid;
+      border-width: 0;
+    }
+
+    &::before {
+      width: 100%;
+      height: 10px;
+      border-top-width: 2px;
+      border-bottom-width: 2px;
+    }
+
+    &::after {
+      width: 10px;
+      height: 100%;
+      border-left-width: 2px;
+      border-right-width: 2px;
+    }
+  }
+}
+
+
+@keyframes flying {
+  0%{
+    top: -50%;
+    left: 80%;
+  }
+  10%{
+    left: 72%;
+  }
+  20%{
+    left: 64%;
+  }
+  30%{
+    left: 56%;
+  }
+  40%{
+    left: 48%;
+  }
+  50%{
+    left: 40%;
+  }
+  60%{
+    left: 32%;
+  }
+  70%{
+    left: 24%;
+  }
+  80%{
+    left: 16%;
+  }
+  90%{
+    left: 8%;
+  }
+  100%{
+    top: 150%;
+    left: 0%;
+  }
+}
+
+@keyframes gift {
+  0%{
+    transform: rotate(3deg);
+  }
+  50%{
+    transform: rotate(-3deg);
+  }
+  100%{
+    transform: rotate(3deg);
+  }
+}
