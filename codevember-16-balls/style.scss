@@ -1,0 +1,67 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#balls {
+  div {
+    width: 75px;
+    height: 75px;
+    background-color: #009dff;
+    border-radius: 100%;
+    position: absolute;
+    animation: ball 1s;
+
+    &.red{
+      background-color: red;
+    }
+    &.orange{
+      background-color: orange;
+    }
+    &.purple{
+      background-color: purple;
+    }
+    &.gray{
+      background-color: gray;
+    }
+    &.cyan{
+      background-color: cyan;
+    }
+    &.wheat{
+      background-color: wheat;
+    }
+    &.darkblue{
+      background-color: darkblue;
+    }
+    &.yellow{
+      background-color: yellow;
+    }
+    &.pink{
+      background-color: pink;
+    }
+    &.blue{
+      background-color: blue;
+    }
+
+  }
+}
+
+@keyframes ball {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

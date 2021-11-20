@@ -18,3 +18,8 @@ Codevember etkinliği kapsamında kasım ayı boyunca her gün bir çalışma ek
 - [Codevember 12 - Bounce Ball](https://abdullahturkmen.github.io/codevember-2021/codevember-12-bounce-ball/)
 - [Codevember 13 - Button Set](https://abdullahturkmen.github.io/codevember-2021/codevember-13-button-set/)
 - [Codevember 14 - Gift](https://abdullahturkmen.github.io/codevember-2021/codevember-14-gift/)
+- [Codevember 15 - Slider](https://abdullahturkmen.github.io/codevember-2021/codevember-15-slider/)
+- [Codevember 16 - Balls](https://abdullahturkmen.github.io/codevember-2021/codevember-16-balls/)
+- [Codevember 17 - Perspective Gallery](https://abdullahturkmen.github.io/codevember-2021/codevember-17-perspective-gallery/)
+- [Codevember 18 - Planet](https://abdullahturkmen.github.io/codevember-2021/codevember-18-planet/)
+- [Codevember 19 - Effect](https://abdullahturkmen.github.io/codevember-2021/codevember-19-effect/)

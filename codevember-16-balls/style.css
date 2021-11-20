@@ -1,0 +1,91 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+#balls div {
+  width: 75px;
+  height: 75px;
+  background-color: #009dff;
+  border-radius: 100%;
+  position: absolute;
+  -webkit-animation: ball 1s;
+          animation: ball 1s;
+}
+
+#balls div.red {
+  background-color: red;
+}
+
+#balls div.orange {
+  background-color: orange;
+}
+
+#balls div.purple {
+  background-color: purple;
+}
+
+#balls div.gray {
+  background-color: gray;
+}
+
+#balls div.cyan {
+  background-color: cyan;
+}
+
+#balls div.wheat {
+  background-color: wheat;
+}
+
+#balls div.darkblue {
+  background-color: darkblue;
+}
+
+#balls div.yellow {
+  background-color: yellow;
+}
+
+#balls div.pink {
+  background-color: pink;
+}
+
+#balls div.blue {
+  background-color: blue;
+}
+
+@-webkit-keyframes ball {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes ball {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=style.css.map */

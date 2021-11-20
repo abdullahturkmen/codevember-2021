@@ -1,0 +1,66 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  background: #022424;
+  background: radial-gradient(circle, #022424 0%, #00100e 100%);
+}
+
+.effect {
+  width: 500px;
+  aspect-ratio: 1;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  animation: shine 2s linear infinite alternate-reverse;
+}
+
+.effect-shine {
+  width: 500px;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  border: 1px solid #fff;
+  -webkit-box-shadow: 0 0 30px 10px #e63288, inset 0 0 30px 10px #e63288;
+          box-shadow: 0 0 30px 10px #e63288, inset 0 0 30px 10px #e63288;
+  -webkit-transform: rotateX(89.95deg);
+          transform: rotateX(89.95deg);
+}
+
+@-webkit-keyframes shine {
+  from {
+    -webkit-perspective: 1000px;
+            perspective: 1000px;
+  }
+  to {
+    -webkit-perspective: 260px;
+            perspective: 260px;
+  }
+}
+
+@keyframes shine {
+  from {
+    -webkit-perspective: 1000px;
+            perspective: 1000px;
+  }
+  to {
+    -webkit-perspective: 260px;
+            perspective: 260px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

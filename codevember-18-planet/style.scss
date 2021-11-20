@@ -1,0 +1,62 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: rgb(3,39,50);
+background: linear-gradient(135deg, rgba(3,39,50,1) 0%, rgba(50,1,61,1) 100%);
+}
+
+.stars{
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  @function stars() {
+      $val: 0px 0px #fff;
+      @for $i from 1 through 500 {
+          $val: #{$val}, #{random(2400)}px #{random(1350)}px 0 #fff;
+      }
+      @return $val;
+  }
+  box-shadow: stars();
+}
+
+.galaxy {
+  max-width: 500px;
+  width: 90%;
+  aspect-ratio: 1;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+
+  .planet {
+    width: 60%;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    background: radial-gradient(circle at 100px 100px, #5cabff, #000);
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    
+    &-circle{
+      width: 100%;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    //border: 2px solid #fff;
+    box-shadow: 0 0 60px 30px #e63288, inset 0 0 60px 30px #e63288;
+    transform: rotateX(80deg) rotateY(-10deg);
+    }
+  }
+}

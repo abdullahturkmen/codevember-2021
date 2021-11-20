@@ -1,0 +1,44 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: rgb(235, 255, 247);
+  background: linear-gradient(135deg, rgba(235, 255, 247, 1) 0%, rgba(148, 148, 148, 1) 100%);
+}
+
+.gallery {
+  background-color: #9e9e9e;
+  width: 500px;
+  aspect-ratio: 1;
+  transform: perspective(1000px) rotateY(30deg) rotateX(50deg) rotateZ(350deg);
+  box-shadow: -50px 70px 80px -30px #1c1c1ce0;
+  transform-style: preserve-3d;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 2em;
+  border-radius: 15px;
+  border: 5px solid goldenrod;
+
+  img {
+    width: 45%;
+    margin-bottom: 2em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+
+    &:hover {
+      transform: translateZ(10px);
+      box-shadow: -10px 20px 10px #1c1c1c59;
+    }
+  }
+}
