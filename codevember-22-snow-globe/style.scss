@@ -1,0 +1,154 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: #0a504a;
+}
+
+.snow {
+  width: 500px;
+  aspect-ratio: 1;
+  position: relative;
+  perspective: 1000px;
+
+  &-globe {
+    width: 100%;
+    aspect-ratio: 1;
+    background: #91b9b1;
+    border-radius: 100%;
+    border: 5px solid #ffffff;
+    overflow: hidden;
+    position: relative;
+
+    &-flakes {
+      display: inline-flex;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      width: 100%;
+      aspect-ratio: 1;
+      position: absolute;
+    }
+
+    svg {
+      position: absolute;
+      bottom: 15%;
+
+      &:first-child {
+        left: -15px;
+      }
+    }
+
+    &-stand {
+      position: absolute;
+      width: 90%;
+      aspect-ratio: 4/1;
+      background: rgb(0, 28, 39);
+      background: linear-gradient(90deg, rgba(0, 28, 39, 1) 15%, rgba(0, 37, 52, 1) 26%, rgba(0, 28, 39, 1) 47%);
+      bottom: -25px;
+      transform: rotateX(45deg) translate(-50%, 0);
+      left: 50%;
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        width: 104%;
+        left: -2%;
+        background: rgb(0, 37, 39);
+        background: linear-gradient(90deg, rgba(0, 37, 39, 1) 21%, rgba(0, 47, 52, 1) 35%, rgba(0, 37, 39, 1) 52%);
+        height: 10%;
+        border-radius: 10px;
+      }
+      &::before {
+        top: 0;
+      }
+      &::after {
+        bottom: 0;
+      }
+    }
+  }
+
+  &-flake {
+    position: relative;
+
+    &::before {
+      content: "❄";
+      position: absolute;
+      animation-name: snowflakes-fall, snowflakes-shake;
+      animation-duration: 10s, 3s;
+      animation-timing-function: linear, ease-in-out;
+      animation-iteration-count: infinite, infinite;
+      animation-play-state: running, running;
+      color: #fff;
+    }
+
+    &:nth-of-type(0) {
+      &::before {
+      animation-delay: 0s, 0s;
+      }
+    }
+    &:nth-of-type(1) {
+      &::before {
+        animation-delay: 1s, 1s;
+        }
+    }
+    &:nth-of-type(2) {
+      &::before {
+        animation-delay: 6s, 0.5s;
+        }
+    }
+    &:nth-of-type(3) {
+      &::before {
+        animation-delay: 4s, 2.5s;
+        }
+    }
+    &:nth-of-type(4) {
+      &::before {
+        animation-delay: 2s, 2s;
+        }
+    }
+    &:nth-of-type(5) {
+      &::before {
+        animation-delay: 7s, 3s;
+        }
+    }
+    &:nth-of-type(6) {
+      &::before {
+        animation-delay: 3s, 1.5s;
+        }
+    }
+
+    
+  }
+}
+
+@keyframes snowflakes-fall {
+  0% {
+    top: -10%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+
+@keyframes snowflakes-shake {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(80px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}

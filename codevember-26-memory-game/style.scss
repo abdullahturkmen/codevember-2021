@@ -1,0 +1,65 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.game {
+    &-table {
+        max-width: 500px;
+        display: inline-flex;
+        flex-wrap: wrap;
+    }
+
+    &-card {
+        flex: 0 0 23%;
+        aspect-ratio: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: beige;
+        border-radius: 5px;
+        transition: all .2s linear;
+        margin: 1%;
+       
+
+        i{
+            font-size: 40px;
+            display: none;
+            
+            & + i{
+                display: block;
+            }
+        }
+
+        &.flip{
+            background: #5dc6ff !important;
+            transform: perspective(100px) rotateY(180deg);
+            i{
+                display: block;
+                & + i{
+                    display: none;
+                }
+            }
+        }
+
+        &.okay{
+            background: #76db82 !important;
+        }
+
+        &:hover{
+            background: #d1d1c0;
+        }
+    }
+}

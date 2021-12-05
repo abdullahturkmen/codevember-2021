@@ -1,0 +1,79 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: burlywood;
+}
+
+.envelope {
+  width: 420px;
+  height: 650px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+
+  &:hover {
+    width: 820px;
+  }
+
+  .cover {
+    background: #363637;
+    color: #cccccc;
+    width: 400px;
+    height: 100%;
+    //clip-path: circle(20% at 80% 60%);
+    clip-path: polygon(0 0, 100% 0, 100% 35%, 90% 45%, 90% 55%, 100% 65%, 100% 100%, 0 100%);
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    p {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 2.5em;
+      text-transform: uppercase;
+
+      & + p {
+        font-size: 4em;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .page {
+    width: 400px;
+    height: 100%;
+    right: 0;
+    background: #fff;
+    position: absolute;
+    z-index: 1;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      padding: 10%;
+    }
+
+    p {
+      position: absolute;
+      top: 5%;
+      width: 100%;
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.25em;
+    }
+  }
+}

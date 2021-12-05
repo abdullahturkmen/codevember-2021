@@ -1,0 +1,39 @@
+body {
+  counter-reset: section;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.row img {
+  width: 80%;
+  aspect-ration: 1;
+}
+
+.row:nth-child(even) > .col-4 {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.row > .col-4 {
+  position: relative;
+}
+
+.row > .col-4::before {
+  color: #777777;
+  counter-increment: section;
+  content: counter(section);
+  text-shadow: -5px 5px 0 #222;
+  font-size: 6em;
+  font-weight: 700;
+  position: absolute;
+  top: -0.5em;
+}
+/*# sourceMappingURL=style.css.map */

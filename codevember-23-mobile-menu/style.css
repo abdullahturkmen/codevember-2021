@@ -1,0 +1,138 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.toggle-button {
+  position: fixed;
+  display: block;
+  top: 20px;
+  right: 20px;
+  z-index: 99999;
+  width: 40px;
+}
+
+.toggle-button:hover {
+  background-color: #e3a410;
+  cursor: pointer;
+}
+
+.menu {
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  height: 100vh;
+  background: #e3a210f5;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.menu-open span {
+  width: 75%;
+  height: 5px;
+  margin: 5px auto;
+  background-color: #363636;
+  display: block;
+  border-radius: 10px;
+}
+
+.menu-close {
+  padding: 15px 0px !important;
+  position: fixed;
+  height: 34px;
+  display: none;
+}
+
+.menu-close span {
+  width: 40px;
+  height: 5px;
+  background-color: #363636;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.menu-close span.first {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  display: block;
+}
+
+.menu-close span.second {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  display: block;
+}
+
+.menu ul {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+
+.menu ul li {
+  list-style-type: none;
+  text-align: center;
+}
+
+.menu ul li a {
+  display: block;
+  padding: 5px;
+  font-size: 30px;
+  font-weight: 300;
+  color: #980198;
+  text-transform: uppercase;
+}
+
+.menu ul li a:hover {
+  text-decoration: none;
+  color: #420042;
+}
+
+.menu ul.socials {
+  width: 100%;
+  text-align: center;
+}
+
+.menu ul.socials li {
+  list-style-type: none;
+  text-align: center;
+  display: inline-block;
+}
+
+.menu ul.socials li a {
+  display: block;
+  padding: 10px;
+  font-size: 23px;
+  font-weight: 300;
+  color: #353535;
+  text-transform: uppercase;
+}
+
+.menu ul.socials li a:hover {
+  text-decoration: none;
+  color: #420042;
+}
+/*# sourceMappingURL=style.css.map */
