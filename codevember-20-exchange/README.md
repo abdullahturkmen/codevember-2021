@@ -1,5 +1,7 @@
 # codevember-20-exchange
 
+- [Project on Codepen - https://codepen.io/abdullahturkmen/full/XWaGEVQ](https://codepen.io/abdullahturkmen/full/XWaGEVQ)
+
 ## Project setup
 ```
 npm install

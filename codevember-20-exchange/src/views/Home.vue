@@ -19,11 +19,12 @@
                 class="form-control"
                 @change="exchange($event)"
                 ref="inputCurrentValue"
+                v-model="inputSelected"
               >
                 <option
                   v-for="(currentFullName, currentCode) in selectList"
                   :key="currentCode"
-                  :selected="currentCode == inputSelected"
+
                 >
                   {{ currentCode }}
                 </option>
@@ -53,7 +54,7 @@
                 <option
                   v-for="(currentFullName, currentCode) in selectList"
                   :key="currentCode"
-                  :selected="currentCode == outputSelected"
+
                 >
                   {{ currentCode }}
                 </option>

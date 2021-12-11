@@ -15,48 +15,47 @@ for (let i = 0; i < cards.length; i++) {
 for (let i = 0; i < cards.length; i++) {
     cards[i].onclick = function () {
 
-        if (clickPermission == true) {
+        if (clickPermission == true && !cards[i].classList.contains("okay")) {
             cards[i].classList.add('flip');
 
             if (cardOne == null) {
                 cardOne = i;
             }
             else {
-                
-                if(i != cardOne){
+
+                if (i != cardOne) {
                     cardTwo = i;
                     clickPermission = false;
                 }
             }
-        
 
 
-        if (cardOne != null && cardTwo != null && cardOne != cardTwo) {
-      
-            if (cards[cardOne].firstElementChild.className === cards[cardTwo].firstElementChild.className) {
 
-                setTimeout(() => {
-                cards[cardOne].classList.add('okay');
-                cards[cardTwo].classList.add('okay');
+            if (cardOne != null && cardTwo != null && cardOne != cardTwo) {
 
-               
-                cardOne = null;
-                cardTwo = null;
-                clickPermission = true;
-                }, 500);
-            }
-            else {
-                setTimeout(() => {
-                    cards[cardOne].classList.remove('flip');
-                    cards[cardTwo].classList.remove('flip');
+                if (cards[cardOne].firstElementChild.className === cards[cardTwo].firstElementChild.className) {
 
-                    cardOne = null;
-                    cardTwo = null;
-                    clickPermission = true;
-                }, 1000);
+                    setTimeout(() => {
+                        cards[cardOne].classList.add('okay');
+                        cards[cardTwo].classList.add('okay');
+
+
+                        cardOne = null;
+                        cardTwo = null;
+                        clickPermission = true;
+                    }, 500);
+                }
+                else {
+                    setTimeout(() => {
+                        cards[cardOne].classList.remove('flip');
+                        cards[cardTwo].classList.remove('flip');
+
+                        cardOne = null;
+                        cardTwo = null;
+                        clickPermission = true;
+                    }, 1000);
+                }
             }
         }
-    }
-
     }
 }
